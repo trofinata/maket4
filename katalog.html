@@ -15,22 +15,31 @@
 	<main>
 		<section class="filter">
 			<h2>Наши номера</h2>
-			Цена за сутки,
-			от 100 до 600
-			Площадь
-			0,63 м2
-			0,90 м2
-			1,13 м2
-			1,56 м2
-			2,56 м2
-			2,88 м2
-			Оснащение номера
-			Пустой номер
-			Лежак
-			Когтеточка
-			Игровой-комплекс
-			Домик
-			Сбросить фильтр
+			<form class="filter-form" action="#" method="get">
+				<fieldset>
+					<legend>Цена за сутки,</legend>
+					<label>от<input type="text" value="100"></label>
+					<label>до<input type="text" value="600"></label>					
+				</fieldset>
+				<fieldset>
+					<legend>Площадь</legend>
+					<label><input type="cheсkbox" name="area" cheked value="0,63">0,63 м2</label>
+					<label><input type="cheсkbox" name="area" cheked value="0,90">0,90 м2</label>
+					<label><input type="cheсkbox" name="area" cheked value="1,13">1,13 м2</label>
+					<label><input type="cheсkbox" name="area" cheked value="1,56">1,56 м2</label>
+					<label><input type="cheсkbox" name="area" cheked value="2,56">2,56 м2</label>
+					<label><input type="cheсkbox" name="area" cheked value="2,88">2.88 м2</label>
+				</fieldset>
+				<fieldset>
+					<legend>Оснащение номера</legend>
+					<label><input type="cheсkbox" name="equipment" cheked value="empty">Пустой номер</label>
+					<label><input type="cheсkbox" name="equipment" cheked value="sofa">Лежак</label>
+					<label><input type="cheсkbox" name="equipment" cheked value="car-tree">Когтеточка</label>
+					<label><input type="cheсkbox" name="equipment" cheked value="toy">Игровой-комплекс</label>
+					<label><input type="cheсkbox" name="equipment" cheked value="house">Домик</label>
+				</fieldset>
+				<button type="reset">Сбросить фильтр</button>
+			</form>
 			По площади
 			<h5>Эконом</h5>
 			<dl>
